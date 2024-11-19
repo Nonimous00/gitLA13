@@ -26,4 +26,10 @@ def addRec():
  	addr = input("Enter Address: ")
 	with open(filename,'a') as file:
 		file.write(name + ", " + email + ", " + addr + "\n")
- 		file.close(
+ 		file.close()
+
+def viewRec():
+	file = open(filename, 'r')
+	with open(filename, 'r') as read_file:
+		print(read_file.read())
+		read_file.close()
